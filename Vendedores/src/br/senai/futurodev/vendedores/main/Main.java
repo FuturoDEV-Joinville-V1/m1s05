@@ -41,7 +41,9 @@ public class Main {
       comissionado.setTaxaComissao(Double.parseDouble(entrada.nextLine()));
     } while (comissionado.getTaxaComissao() == 0.0);
 
+    Vendedor parametro = comissionado;
+
     RelatorioVendas.imprimeSalarioVendedor(vendedor);
-    RelatorioVendas.imprimeSalarioVendedor(comissionado);
+    RelatorioVendas.imprimeSalarioVendedor(parametro);
   }
 }
